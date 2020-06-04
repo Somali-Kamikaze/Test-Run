@@ -1,0 +1,185 @@
+
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/dancingscript/v14/If2RXTr6YS-zF4S-kcSWSVi_szLgiuE.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Lemonada';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/lemonada/v9/0QIjMXFD9oygTWy_R8tJv_Q.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+.cakecontent {
+    display: grid;
+    grid-gap: 10px ;
+    grid-template-areas:  "header header header header"
+                          "sidebar sidebar sidebar sidebar"
+                          "info info info info" 
+                          "content content content content"
+                          "footer footer footer footer";
+    grid-template-columns: 1fr 1fr 1fr 1fr;  
+    grid-template-rows: 500px 260px 600px 1fr 350px;                    
+}
+
+.cakecontent div:nth-child(odd) {
+    background-color: indianred;
+}
+
+.cakecontent div:nth-child(even) {
+    background-color: gray;
+}
+
+.header {
+    grid-area: header;
+    color: goldenrod;
+    font-weight: 700;
+}
+
+.info {
+    grid-area: info;
+    text-align: center;
+    font-family: Lemonada ;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.cakes {
+    border: 1px groove black;
+    padding: 2px;
+    
+}
+
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    color: goldenrod;
+    font-family: Dancing Script;
+}
+
+h1, h3 {
+    text-align: center;
+    font-family: Dancing Script ;
+}
+
+h1 {
+    padding-bottom: 10px;
+    font-size: 100px;
+}
+
+h3 {
+    padding-bottom: 20px ;
+    font-size: 30px;
+}
+
+h4 {
+    font-family: Dancing Script ;
+    color: goldenrod;
+}
+
+@media only screen and (min-width: 736px) {
+
+@font-face {
+    font-family: 'Dancing Script';
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://fonts.gstatic.com/s/dancingscript/v14/If2RXTr6YS-zF4S-kcSWSVi_szLgiuE.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  @font-face {
+    font-family: 'Lemonada';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/lemonada/v9/0QIjMXFD9oygTWy_R8tJv_Q.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+.cakecontent {
+    display: grid;
+    grid-gap: 10px ;
+    grid-template-areas:  " . header header header . "
+                          " . sidebar info info . "
+                          " . sidebar info info . "
+                          " . content content content . " 
+                         " . content content content . "
+                         " . footer footer footer . ";
+    grid-template-columns: 10% 333px 333px 333px 10%;  
+    grid-template-rows: 550px 260px 260px 300px 1fr 340px;                    
+}
+
+.header {
+    grid-area: header;
+}
+
+.info {
+    grid-area: info;
+    text-align: center;
+    font-family: Lemonada ;
+    font-size: medium;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.content {
+    grid-area: content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 8px;
+}
+
+.cakes {
+    border: 1px groove black;
+    padding: 2px;
+    
+}
+
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    color: goldenrod;
+    font-family: Dancing Script;
+}
+
+h1, h3 {
+    text-align: center;
+    font-family: Dancing Script ;
+}
+
+h1 {
+    padding-bottom: 10px;
+    font-size: 100px;
+}
+
+h3 {
+    padding-bottom: 20px ;
+    font-size: 30px;
+}
+
+h4 {
+    font-family: Dancing Script ;
+    color: goldenrod;
+}
+}
